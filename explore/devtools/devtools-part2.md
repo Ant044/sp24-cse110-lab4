@@ -1,0 +1,2 @@
+1) The bug was that num1 and num2 were strings, leading to result being the concatenation of two strings instead of the sum of two numbers.
+2) I would fix calculateSum() by typecasting num1 and num2 into numbers.
