@@ -9,3 +9,41 @@
 9) There is an error because i is not in scope at line 11
 10) 3 is returned, as that is the length of the array passed in. The const variable is created in the same scope as line 12.
 11) the array [50, 100, 150] is returned. Because discountedPrice is declared in the for loop, despite being a const it can be run multiple times because it is repeatedly created and destroyed.
+12) 
+```
+A - student.name
+B - student["Grad Year"]
+C - student.greeting()
+D - student["Favorite Teacher"].name
+E - student.courseLoad[0]
+```
+13) 
+```
+A - 32, int gets converted into a string and is concatenated
+B - 1, because you can't negatively concatenate, the string is converted to int
+C - 3, null is treated as 0 in mathematic operations
+D - 3null, null is converted into a string and concatenated
+E - 4, true is converted into 1 
+F - 0, both false and null are numerically treated as 0
+G - 3undefined, undefined is converted to a string then concatenated
+H - NAN, undefined is converted to NaN and mathematical operations with NaN become NaN
+```
+14) 
+```
+A - true, 2 is converted into a number for comparison
+B - false, string comparison is alphabetical (Based on ASCII)
+C - true, '2' is converted to a number for comparison
+D - false, triple equals also requires same type
+E - false, true is converted to 1, which is != 2
+F - true, Boolean(2) 
+```
+15) == allows for automatic type conversions before compairsons while === will return false if the variables are not the same type
+17) The result is the array [2,4,6]. We get this because when the array [1,2,3] is passed in, modifyArray creates a new array, modifies each value of the old array using whatever function is passed into it, and puts the new value into the new array that it then returns. In this case, the passed in function just multiplies each number by 2.
+19) This prints
+```
+1
+4
+3
+2
+```
+as it prints 1 4 and 3 immediately, then prints 2 after the 1 second timer
